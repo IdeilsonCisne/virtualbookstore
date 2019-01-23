@@ -4,6 +4,9 @@ class Book
     @author = author
     @isbn = isbn
     @number_of_pages = number_of_pages
-    puts "Author: #{author}, ISBN: #{isbn}, Number of Pages: #{number_of_pages}"
+  end
+
+  def to_s
+    "Author: #{@author}, ISBN: #{@isbn}, Number of Pages: #{@number_of_pages}"
   end
 end
