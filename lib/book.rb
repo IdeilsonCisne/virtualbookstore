@@ -11,11 +11,8 @@ class Book
     "Author: #{@author}, ISBN: #{@isbn}, Number of Pages: #{@number_of_pages}"
   end
 
-  def price # método que consulta a variável de instância
-    @price
-  end
+  # par do método de leitura e escrita. Substitui os métodos criados anteriormente
+  # também podemos usar separadamente os métodos attr_writer ou attr_reader.
+  attr_accessor :price
 
-  def price=(price) # método que altera o valor da variável de instância
-    @price = price
-  end
 end
